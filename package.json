@@ -4,17 +4,30 @@
   "description": "setting up modern javascript project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint '/Users/peterhirt/javascript/modern-javascript/src/**/*.js' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roestigraben/modern-javascript.git"
   },
-  "keywords": ["Javascript", "ES2015", "lint", "rollup"],
+  "keywords": [
+    "Javascript",
+    "ES2015",
+    "lint",
+    "rollup"
+  ],
   "author": "Peter Hirt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/roestigraben/modern-javascript/issues"
   },
-  "homepage": "https://github.com/roestigraben/modern-javascript#readme"
+  "homepage": "https://github.com/roestigraben/modern-javascript#readme",
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
