@@ -1,4 +1,5 @@
 import { terser } from 'rollup-plugin-terser'
+import { string } from 'rollup-plugin-string'
 
 
 const dist = 'dist'
@@ -27,6 +28,9 @@ export default {
         }
     ],
     plugins: [
+        string({
+            include: '**/*.css'
+        }),
         production && terser()
     ]
 
