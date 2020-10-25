@@ -2,7 +2,9 @@
   "name": "modern-javascript",
   "version": "1.0.0",
   "description": "setting up modern javascript project",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint '**/*.js'",
